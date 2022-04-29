@@ -4,25 +4,49 @@ body{
     color: white;
 }
 
-button{
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 32px;
-    margin: 0 auto;
-}
-
-.contenedor{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .borde-calculadora{
-    width: 80%;
+    width: 95%;
     border-radius: 10px;
     background-color: #EF466F;
     display: flex;
     justify-content: center;
 }
+
+button{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 24px;
+    margin: 0 auto;
+}
+
+.calc-btn{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: white;
+}
+
+
+@media (min-width: 690px) {
+    button{
+        font-size: 32px;
+    }
+    .calc-btn{
+        width: 100px;
+        height: 100px;
+    }
+    .borde-calculadora{
+        width: 80%;
+    }
+}
+
+
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .resultado-calculadora {
     width: 650px auto;
@@ -50,28 +74,17 @@ button{
     margin: 0px auto;
     margin-top: 40px;
 }
+
 .num-btn{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
     background-color: #F2C063;
-    color: white;
 }
 
 .symbol-btn{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
     background-color: #245473;
-    color: white;
 }
 
 .clear-btn{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
     background-color: #0DD99F;
-    color: white;
 }
 
 .flex{
@@ -84,7 +97,7 @@ button{
     margin-top: 20px;
     display: flex;
     justify-content: center;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     padding-top: 30px;
 }
 
